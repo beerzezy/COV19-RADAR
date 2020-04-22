@@ -64,7 +64,9 @@ export default {
         getCovid19StatToday () {
             axios
                 .get('/today')
-                .then(res => { this.statTodayData = res.data })
+                .then(res => { 
+                    this.statTodayData = res.data 
+                })
                 .catch(err => { console.log(err) })
         },
         numberWithCommas (val) {

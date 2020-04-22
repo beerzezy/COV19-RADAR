@@ -6,9 +6,10 @@
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav >
-          <b-nav-item href="#">Dashboard</b-nav-item>
-          <b-nav-item href="#">Map</b-nav-item>
-          <b-nav-item href="#">Wiki</b-nav-item>
+          <b-nav-item @click="routePage(1)">Dashboard</b-nav-item>
+          <b-nav-item @click="routePage(2)">Map</b-nav-item>
+          <b-nav-item @click="routePage(3)">Wiki</b-nav-item>
+          <b-nav-item @click="routePage(4)">About</b-nav-item>
         </b-navbar-nav>
 
       <!-- Right aligned nav items -->
@@ -45,6 +46,26 @@ export default {
         return {
             msg: 'navbar'
         }
+    },
+    methods: {
+      routePage (val) {
+        switch(val) {
+          case 1:
+            if (this.$route.path !== '/Dashboard/share') this.$router.push('/Dashboard/share')
+            break;
+          case 2:
+            if (this.$route.path !== '/Map/share') this.$router.push('/Map/share')
+            break;
+          case 3:
+            if (this.$route.path !== '/Wiki/share') this.$router.push('/Wiki/share')
+            break;
+          case 4:
+            if (this.$route.path !== '/About/share') this.$router.push('/About/share')
+            break;
+          default:
+            // code block
+        }
+      }
     }
 }
 </script>
