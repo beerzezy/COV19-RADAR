@@ -13,5 +13,7 @@
   -moz-osx-font-smoothing: grayscale;
   /* text-align: center; */
   /* color: #2c3e50; */
+  background: #1f2847;
+  min-height: 100vh;
 }
 </style>

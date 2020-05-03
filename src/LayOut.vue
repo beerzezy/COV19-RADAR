@@ -23,9 +23,9 @@ export default {
 </script>
 
 <style>
-    body {
-        background: #282432;
-    }
+    /* body {
+        background: #1f2847;
+    } */
     .content {
         margin-top: 16px;
     }

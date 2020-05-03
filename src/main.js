@@ -6,6 +6,12 @@ import router from './router'
 import store from './store/store'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faHeartbeat, faChartBar, faAlignLeft } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+library.add(faHeartbeat, faChartBar, faAlignLeft)
+Vue.component('font-awesome-icon', FontAwesomeIcon)
+
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
