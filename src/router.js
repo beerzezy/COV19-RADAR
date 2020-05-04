@@ -2,9 +2,10 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Dashboard from './routes/dashboard'
 import Map from './routes/map'
-import Source from './routes/source'
-import Wiki from './routes/wiki'
+import Sources from './routes/sources'
+import Health from './routes/health'
 import About from './routes/about'
+import Donate from './routes/donate'
 
 Vue.use(Router)
 
@@ -13,9 +14,10 @@ const routes = {
     routes: [
         Dashboard,
         Map,
-        Source,
-        Wiki,
+        Sources,
+        Health,
         About,
+        Donate,
         { path: '*', redirect: '/Dashboard/share' }
     ]
 }

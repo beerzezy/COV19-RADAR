@@ -7,9 +7,30 @@ import store from './store/store'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faHeartbeat, faChartBar, faAlignLeft, faEye} from '@fortawesome/free-solid-svg-icons'
+import { faHeartbeat, 
+  faChartBar, 
+  faAlignLeft, 
+  faEye, faMapMarkedAlt, 
+  faLungsVirus, 
+  faViruses, 
+  faFlag, 
+  faQuestionCircle, 
+  faHandHoldingMedical,
+  faLink
+} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-library.add(faHeartbeat, faChartBar, faAlignLeft, faEye)
+library.add(  faHeartbeat, 
+              faChartBar, 
+              faAlignLeft, 
+              faEye, 
+              faMapMarkedAlt, 
+              faLungsVirus, 
+              faViruses, 
+              faFlag, 
+              faQuestionCircle, 
+              faHandHoldingMedical,
+              faLink
+            )
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 import 'bootstrap/dist/css/bootstrap.css'

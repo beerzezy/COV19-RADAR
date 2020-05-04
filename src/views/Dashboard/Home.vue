@@ -1,9 +1,9 @@
 <template>
     <div>
         <b-container fluid>
-            <b-row style="color:#fff;padding-top:15px;padding-bottom:20px;">
+            <b-row style="color:#d8dce6;padding-top:15px;padding-bottom:20px;">
                 <b-col sm="12">
-                    <h3><font-awesome-icon icon="heartbeat" style="font-size:22px;color:#d8dce6;" /> ข้อมูลประจำวัน</h3>
+                    <h3><font-awesome-icon icon="lungs-virus" style="font-size:22px;color:#d8dce6;" /> ข้อมูลประจำวัน</h3>
                 </b-col>
                 <b-col sm="12">
                     <b-card-text style="font-size:12px;color:#b2bec3;">อัพเดทข้อมูลล่าสุด {{statTodayData.UpdateDate}}</b-card-text>

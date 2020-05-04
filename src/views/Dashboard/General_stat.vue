@@ -1,18 +1,18 @@
 <template>
     <div>
         <b-row style="color:#fff;padding-top:30px;padding-bottom:20px;">
-                <b-col sm="12">
-                    <h5 style="color:#d8dce6;"><font-awesome-icon icon="chart-bar" style="font-size:22px;color:#d8dce6;"/> สถิติทั่วไป</h5>
-                </b-col>
-                <b-col sm="12">
-                    <b-card-text style="font-size:12px;color:#b2bec3;">อัพเดทข้อมูลล่าสุด {{UpdateDate}}</b-card-text>
-                </b-col>
-            </b-row>
-        <b-row>
+            <b-col sm="12">
+                <h5 style="color:#d8dce6;"><font-awesome-icon icon="chart-bar" style="font-size:22px;color:#d8dce6;"/> สถิติทั่วไป</h5>
+            </b-col>
+            <b-col sm="12">
+                <b-card-text style="font-size:12px;color:#b2bec3;">อัพเดทข้อมูลล่าสุด {{UpdateDate}}</b-card-text>
+            </b-col>
+        </b-row>
+        <b-row style="padding-bottom:40px;">
             <b-col sm="12">
                 <b-card-group deck>
                     <b-card text-variant="white" style="background:#313c5f;">
-                        <p style="color:#d8dce6;">แยกตามจังหวัด</p>
+                        <p style="color:#d8dce6;"><font-awesome-icon icon="viruses" style="font-size:22px;color:#d8dce6;"/>  แยกตามจังหวัด</p>
                         <div class="tableFixHead">
                             <table class="table table-striped borderless">
                                 <thead>
@@ -31,7 +31,7 @@
                         </div>
                     </b-card>
                     <b-card text-variant="white" style="background:#313c5f;">
-                        <p style="color:#d8dce6;"><font-awesome-icon icon="chart-bar" style="font-size:22px;color:#d8dce6;"/> สัญชาติ</p>
+                        <p style="color:#d8dce6;"><font-awesome-icon icon="flag" style="font-size:22px;color:#d8dce6;"/> สัญชาติ</p>
                         <canvas id="graph" width="700" height="300" style="display: block; width: 770px; height: 385px;"></canvas>
                     </b-card>
                 </b-card-group>
